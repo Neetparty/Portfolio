@@ -1,5 +1,4 @@
-
-import { Chakra } from './components/Chakra'
+import { Chakra, ChakraLayout } from './components/Chakra'
 import './globals.css'
 
 export const metadata = {
@@ -8,20 +7,18 @@ export const metadata = {
         template: '%s | Neetparty'
     },
     icons: {
-        icon: '/icon.png'
+        icon: '/FbXxKbwaUAANdvS.jfif'
     }
 }
 
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
             <body>
                 <Chakra>
-                    {children}
+                    <ChakraLayout>
+                        {children}
+                    </ChakraLayout>
                 </Chakra>
             </body>
         </html>

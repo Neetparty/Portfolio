@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { Carousel } from '../project/Carousel'
+import { Carousel } from "./components/Carousel"
 
 const loadImage = async () => {
 
@@ -9,11 +9,13 @@ const loadImage = async () => {
         })
 }
 
-export const Test = async (props:any) => {
+const CarouselProject = async () => {
 
     const image = await loadImage()
-    
-    return (
-        <Carousel image={image} /> 
+
+    return(
+        <Carousel image={image} />
     )
 }
+
+export default CarouselProject

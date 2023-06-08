@@ -1,0 +1,80 @@
+{
+    "DATA": [
+        {
+            "name_en" : "Full Body (Color)",
+            "name_th" : "ภาพเต็มตัว (สี)"
+        },
+        {
+            "name_en" : "Full Body (Line Art)",
+            "name_th" : "ภาพเต็มตัว (เส้น)"
+        },
+        {
+            "name_en" : "Half Body (Color)",
+            "name_th" : "ภาพครึ่งตัว (สี)"
+        },
+        {
+            "name_en" : "Half Body (Line Art)",
+            "name_th" : "ภาพครึ่งตัว (เส้น)"
+        },
+        {
+            "name_en" : "Burst Up (Color)",
+            "name_th" : "ภาพหัวถึงอก (เส้น)"
+        },
+        {
+            "name_en" : "Burst Up (Line Art)",
+            "name_th" : "ภาพหัวถึงอก (เส้น)"
+        },
+        {
+            "name_en" : "Chibi (Color)",
+            "name_th" : "ภาพตัวจิบิ (เส้น)"
+        },
+        {
+            "name_en" : "Chibi (Line Art)",
+            "name_th" : "ภาพตัวจิบิ (เส้น)"
+        },
+        {
+            "name_en" : "YCH (Color)",
+            "name_th" : "ภาพ YCH (สี)"
+        },
+        {
+            "name_en" : "YCH (Line Art)",
+            "name_th" : "ภาพ YCH (เส้น)"
+        },
+        {
+            "name_en" : "Logo",
+            "name_th" : "โลโก้"
+        },
+        {
+            "name_en" : "Charecter Design",
+            "name_th" : "ออกแบบตัวละคร"
+        },
+        {
+            "name_en" : "VTube Model",
+            "name_th" : "โมเดล VTuber (ภาพแบบแยกส่วน)"
+        },
+        {
+            "name_en" : "Model Rigging",
+            "name_th" : "Rig โมเดล"
+        },
+        {
+            "name_en" : "FanArt",
+            "name_th" : "ภาพ FanArt"
+        },
+        {
+            "name_en" : "Overlay",
+            "name_th" : "ภาพฉาก (สำหรับสตรีม)"
+        },
+        {
+            "name_en" : "Sticker",
+            "name_th" : "ภาพสติกเกอร์"
+        },
+        {
+            "name_en" : "Scene",
+            "name_th" : "ภาพพื้นหลัง"
+        },
+        {
+            "name_en" : "Other",
+            "name_th" : "อื่นๆ"
+        }
+    ]
+}
