@@ -1,0 +1,22 @@
+{
+    "DATA": [
+        {
+            "name": "Chakra UI Carousel",
+            "image": "https://placehold.co/400x300",
+            "type" : "component",
+            "link": "/project/Carousel"
+        },
+        {
+            "name": "Editable Table",
+            "image": "https://placehold.co/400x300",
+            "type" : "component",
+            "link": "/project/EditableTable"
+        },
+        {
+            "name": "Search bar",
+            "image": "https://placehold.co/400x300",
+            "type" : "component",
+            "link": "/project/SearchBar"
+        }
+    ]
+}

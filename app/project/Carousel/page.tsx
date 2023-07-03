@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { ItemLayout } from '../components'
 import { Carousel } from "./components/Carousel"
 
 const loadImage = async () => {
@@ -14,7 +15,9 @@ const CarouselProject = async () => {
     const image = await loadImage()
 
     return(
-        <Carousel image={image} />
+        <ItemLayout title='Chakra UI Carousel'>
+            <Carousel image={image} />
+        </ItemLayout>
     )
 }
 

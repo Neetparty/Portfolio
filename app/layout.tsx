@@ -5,9 +5,6 @@ export const metadata = {
     title: {
         default: 'Portfolio | Neetparty',
         template: '%s | Neetparty'
-    },
-    icons: {
-        icon: '/FbXxKbwaUAANdvS.jfif'
     }
 }
 

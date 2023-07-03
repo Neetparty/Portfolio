@@ -11,7 +11,6 @@ interface CarouselProps {
 export const Carousel = ({ image }: CarouselProps) => {
 
     const [count, setCount] = useState(0)
-    const [animation, setAnimation] = useState(0)
 
     const getImage = image.map((i: any, k: number) => {
 
@@ -24,14 +23,59 @@ export const Carousel = ({ image }: CarouselProps) => {
     })
 
     return (
-        <Box>
-            <Stack>
-                {getImage}
-            </Stack>
-            <Stack direction='row' >
-                <Button onClick={() => { count <= 0 ? setCount(image.length - 1) : setCount(count - 1) }} >{'<'}</Button>
-                <Button onClick={() => { count === image.length - 1 ? setCount(0) : setCount(count + 1) }} >{'>'}</Button>
-            </Stack>
+        <Box
+            display='flex'
+            w='100%'
+            alignContent='center'
+            alignItems='center'
+            justifyContent='center'
+            justifyItems='center'
+            mt='2rem'
+            mb='2rem'
+        >
+            <Box position='relative' >
+                <Stack
+                    width='max-content'
+                    align='center'
+                    justify='center'
+                >
+                    {getImage}
+                </Stack>
+                <Button
+                    position='absolute'
+                    left='0'
+                    top='0'
+                    width='3rem'
+                    height='100%'
+                    borderRadius='0'
+                    variant='ghost'
+                    color='whiteAlpha.900'
+                    bgColor='blackAlpha.400'
+                    onClick={() => { count <= 0 ? setCount(image.length - 1) : setCount(count - 1) }}
+                    _hover={{
+                        bgColor: 'blackAlpha.600'
+                    }}
+                >
+                    {'<'}
+                </Button>
+                <Button
+                    position='absolute'
+                    right='0'
+                    top='0'
+                    width='3rem'
+                    height='100%'
+                    borderRadius='0'
+                    variant='ghost'
+                    color='whiteAlpha.900'
+                    bgColor='blackAlpha.400'
+                    onClick={() => { count === image.length - 1 ? setCount(0) : setCount(count + 1) }} 
+                    _hover={{
+                        bgColor: 'blackAlpha.600'
+                    }}
+                >
+                    {'>'}
+                </Button>
+            </Box>
         </Box>
     )
 
@@ -42,6 +86,6 @@ interface CarouselItemsProps {
     src: string
 }
 
-export const CarouselItems = ({alt, src}:CarouselItemsProps) => {
+export const CarouselItems = ({ alt, src }: CarouselItemsProps) => {
     return <Image minH='300px' minW='500px' maxH='300px' maxW='500px' alt={alt} fit='cover' src={src} />
 }  

@@ -24,7 +24,7 @@ export const ChakraLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <Grid
             templateAreas={{ base: `'Content Content'`, lg: `'Sidebar Content'` }}
-            gridTemplateRows={'100vh 100%'}
+            gridTemplateRows={'100% 100%'}
             gridTemplateColumns={'300px'}
             gap='0'
         >
@@ -50,6 +50,7 @@ export const ChakraLayout = ({ children }: { children: React.ReactNode }) => {
                 display={{ base: 'none', lg: 'block' }}
                 bg='purple.400'
                 area={'Sidebar'}
+                minH='100vh'
             >
                 <Box height='25%' >
                     <HeaderSidebar />

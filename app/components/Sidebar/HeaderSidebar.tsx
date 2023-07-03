@@ -24,7 +24,7 @@ export const HeaderSidebar = () => {
                     textColor='white' 
                     fontSize='xl' 
                     fontWeight='bold' 
-                >Neetparty</Text>
+                >Sathapat Kheawrodpai</Text>
                 <HStack>
                     <IconButton 
                         aria-label='facebook' 
