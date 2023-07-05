@@ -10,7 +10,7 @@ const SkillProgressComponent = ({ percentage, text }: { percentage: number, text
 
     useEffect(() => {
         count < percentage ? setCount(count+5) : setCount(percentage)
-    }, [count])
+    }, [count, percentage])
 
     return (
         <Box>
