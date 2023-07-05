@@ -4,7 +4,7 @@ import { use } from "react"
 
 const getData = async () => {
 
-    const res = await fetch('http://localhost/api/selection')
+    const res = await fetch('http://127.0.0.1:3000/api/selection')
 
     if (!res.ok) {
         throw new Error('Failed to fetch data')
