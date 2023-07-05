@@ -1,7 +1,8 @@
 'use client'
 
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Container, Divider, SimpleGrid, Text, VStack } from "@chakra-ui/react"
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Container, Divider, HStack, SimpleGrid, Text, VStack } from "@chakra-ui/react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 const AccordionComponent = ({ text, children }: { text: string, children: React.ReactNode }) => {
     return (
@@ -76,7 +77,7 @@ const About = () => {
                     <Text fontSize='lg' as='kbd' >{`Age > 24`}</Text>
                     <Text fontSize='lg' as='kbd' >{`Birthday > 29 Dec 1998`}</Text>
                     <Text fontSize='lg' as='kbd' >{`Degree > Junior`}</Text>
-                    <Text fontSize='lg' as='kbd' >{`Website > www.example.com`}</Text>
+                    <HStack><Text fontSize='lg' as='kbd' >{`Website > `}</Text><Link href='https://neetparty-portfolio.vercel.app/' ><Text fontSize='lg' as='kbd' >{`neetparty-portfolio.vercel.app`}</Text></Link></HStack>
                     <Text fontSize='lg' as='kbd' >{`City > Huaiyot, Trang`}</Text>
                     <Text fontSize='lg' as='kbd' >{`Email > Private`}</Text>
                     <Text fontSize='lg' as='kbd' >{`Phone > Private`}</Text>

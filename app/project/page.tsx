@@ -3,7 +3,7 @@ import axios from "axios"
 import { ProjectCard, ProjectLayout } from "./components"
 
 const getProjectData = async () => {
-    const res = await axios.get('https://neetparty-portfolio.vercel.app/api/project')
+    const res = await axios.get(`${process.env.HOST_API}/api/project`)
     return res.data
 }
 
