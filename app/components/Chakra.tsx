@@ -5,7 +5,7 @@ import { ContentSidebar, FooterSidebar, HeaderSidebar } from './Sidebar'
 import { MiniMenu } from './Sidebar/MiniMenu'
 
 import theme from '../theme/theme'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { useRef } from 'react'
 
 export const Chakra = ({ children }: { children: React.ReactNode }) => {
@@ -44,7 +44,9 @@ export const ChakraLayout = ({ children }: { children: React.ReactNode }) => {
                 >
                     <MiniMenu />
                 </MotionBox>
-                {children}
+                <AnimatePresence initial={false} mode='wait' >
+                    {children}
+                </AnimatePresence>
             </GridItem>
             <GridItem
                 display={{ base: 'none', lg: 'block' }}

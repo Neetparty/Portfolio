@@ -51,12 +51,12 @@ export const ContentSidebar = () => {
                     </Link>
                 </Box>
                 <Box w='100%' h='100%'>
-                    <Link href={`/resume`} >
+                    <Link href={`/skills`} >
                         <Button
-                            aria-label="resume"
+                            aria-label="skills"
                             leftIcon={<FileIcon />}
                             {...IconStyle}
-                        >Resume</Button>
+                        >Skills</Button>
                     </Link>
                 </Box>
                 <Box w='100%' h='100%'>

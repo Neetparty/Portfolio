@@ -96,9 +96,9 @@ export const MiniMenu = () => {
                                 }}
                         />
                     </Link>
-                    <Link href={`/resume`}>
+                    <Link href={`/skills`}>
                         <MotionIcon
-                            aria-label="resume"
+                            aria-label="skills"
                             icon={<FileIcon />}
                             {...IconStyle}
                             transition={isOpen ?

@@ -87,5 +87,13 @@ interface CarouselItemsProps {
 }
 
 export const CarouselItems = ({ alt, src }: CarouselItemsProps) => {
-    return <Image minH='300px' minW='500px' maxH='300px' maxW='500px' alt={alt} fit='cover' src={src} />
+    return <Image 
+                minH={{base: '250px', md: '400px', lg: '400px', xl: '475px'}} 
+                minW={{base: '370px', md: '700px', lg: '700px', xl: '750px'}} 
+                maxH={{base: '250px', md: '400px', lg: '400px', xl: '475px'}} 
+                maxW={{base: '370px', md: '700px', lg: '700px', xl: '750px'}} 
+                alt={alt} 
+                fit='cover' 
+                src={src} 
+            />
 }  
