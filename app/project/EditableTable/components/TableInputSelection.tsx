@@ -4,7 +4,7 @@ import { use } from "react"
 
 const getData = async () => {
 
-    const res = await axios.get('http://localhost:8080/api/selection')
+    const res = await axios.get('https://neetparty-portfolio.vercel.app/api/selection')
     return res.data
 }
 
