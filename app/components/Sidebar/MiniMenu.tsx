@@ -61,7 +61,7 @@ export const MiniMenu = () => {
                     <Avatar
                         name='avatar'
                         size='lg'
-                        src='http://localhost:8080/FbXxKbwaUAANdvS.jfif'
+                        src='/FbXxKbwaUAANdvS.jfif'
                         showBorder={true}
                         onClick={() => setIsOpen(!isOpen)}
                     />

@@ -16,7 +16,7 @@ export const HeaderSidebar = () => {
                 <Avatar
                     name='avatar'
                     size='xl' 
-                    src='http://localhost:8080/FbXxKbwaUAANdvS.jfif'
+                    src='/FbXxKbwaUAANdvS.jfif'
                     showBorder={true}
                     
                 />
