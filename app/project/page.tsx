@@ -3,7 +3,7 @@ import axios from "axios"
 import { ProjectCard, ProjectLayout } from "./components"
 
 const getProjectData = async () => {
-    const res = await axios.get('/api/project')
+    const res = await axios.get('http://localhost/api/project')
     return res.data
 }
 
