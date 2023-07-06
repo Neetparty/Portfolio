@@ -54,10 +54,10 @@ export const ChakraLayout = ({ children }: { children: React.ReactNode }) => {
                 area={'Sidebar'}
                 minH='100vh'
             >
-                <Box height='25%' >
+                <Box height='300px' >
                     <HeaderSidebar />
                 </Box>
-                <Box height='68%' >
+                <Box height='600px' >
                     <ContentSidebar />
                 </Box>
                 <Box height='7%' >

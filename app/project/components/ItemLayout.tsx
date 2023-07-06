@@ -1,6 +1,7 @@
 'use client'
 import { ChevronLeftIcon } from "@chakra-ui/icons"
 import { Container, Heading, Box, HStack, IconButton } from "@chakra-ui/react"
+import { motion } from "framer-motion"
 import Link from "next/link"
 
 type ItemLayoutProps = {
@@ -9,6 +10,24 @@ type ItemLayoutProps = {
 }
 
 export const ItemLayout = ({title, children}:ItemLayoutProps) => {
+
+    const MotionBox = motion(Box)
+
+    const variants = {
+        enter: {
+            y: 500,
+            opacity: 0
+        },
+        initial: {
+            y: 0,
+            opacity: 1
+        },
+        exit: {
+            y: -100,
+            opacity: 0
+        }
+    }
+
     return (
         <Container
             minW={{
@@ -30,7 +49,7 @@ export const ItemLayout = ({title, children}:ItemLayoutProps) => {
                 xl: '4rem',
             }}
         >
-            <Box
+            <MotionBox
                 p={{
                     base: '0',
                     sm: '0',
@@ -42,13 +61,21 @@ export const ItemLayout = ({title, children}:ItemLayoutProps) => {
                 borderRadius='10px'
                 minH='max-content'
                 backgroundColor='whiteAlpha.700'
+                variants={variants}
+                initial="enter"
+                animate='initial'
+                exit='exit'
+                transition={{
+                    y: { type: "spring", stiffness: 300, damping: 30 },
+                    opacity: { duration: 1.25 }
+                }}
             >
                 <HStack m='1.5rem'>
                     <Link href='/project'><IconButton aria-label="back" colorScheme='none' color='blackAlpha.700' icon={<ChevronLeftIcon boxSize='2rem' />} /></Link>
                     <Heading ml='1.5rem' textColor='blackAlpha.700' >{title}</Heading>
                 </HStack>
                 {children}
-            </Box>
+            </MotionBox>
         </Container>
     )
 }
