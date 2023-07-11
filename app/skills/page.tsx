@@ -16,6 +16,7 @@ const SkillProgressComponent = ({ percentage, text }: { percentage: number, text
         <Box>
             <Text fontSize='xl' as='kbd' >{text}</Text>
             <Progress
+                colorScheme='purple'
                 bgColor='gray.300'
                 value={count}
             />
