@@ -47,7 +47,7 @@ export const Homepage = () => {
                     <Avatar
                         name='avatar'
                         size='2xl'
-                        src='FbXxKbwaUAANdvS.jfif'
+                        src='/main.jpg'
                         showBorder={true}
                     />
                     <Text

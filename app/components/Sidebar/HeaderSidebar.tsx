@@ -16,9 +16,9 @@ export const HeaderSidebar = () => {
                 <Avatar
                     name='avatar'
                     size='xl' 
-                    src='/FbXxKbwaUAANdvS.jfif'
+                    src='/main.jpg'
                     showBorder={true}
-                    
+                    objectPosition='top'
                 />
                 <Text 
                     textColor='white' 
