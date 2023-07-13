@@ -5,6 +5,9 @@ const nextConfig = {
     appDir: true,
     serverActions: true
   },
+  env: {
+    HOST_API: process.env.HOST_API,
+  }
 }
 
 module.exports = nextConfig
